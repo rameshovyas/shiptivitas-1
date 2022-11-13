@@ -4,7 +4,6 @@ import HomeTab from './HomeTab';
 import Navigation from './Navigation';
 import Board from './Board';
 import './App.css';
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -12,6 +11,7 @@ class App extends Component {
       selectedTab: 'home',
     };
   }
+  
   renderShippingRequests() {
     return (<Board />);
   }
@@ -49,6 +49,9 @@ class App extends Component {
       selectedTab: tabName,
     });
   }
+
+
 }
+
 
 export default App;
